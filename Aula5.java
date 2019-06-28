@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Aula5 {
 	public static void main(String args[]) {
 		// java.util.Scanner scan = new java.util.Scanner(System.in);
