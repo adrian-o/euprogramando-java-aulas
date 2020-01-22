@@ -1,4 +1,4 @@
 ## Java files
 
-.class
-.jar
+*.class
+*.jar
