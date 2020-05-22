@@ -6,7 +6,6 @@ public class JavaBasico {
     // Escopo: classe/objeto/instância - São chamadas de atributos
     public int var1 = 1;
     public Integer var2 = 2;
-    private String var3 = "3";
 
     public static void main(String[] args) {
         JavaBasico jb = new JavaBasico();
@@ -27,8 +26,8 @@ public class JavaBasico {
         int var5 = 5;
         
         if (var5 == 5) {
-            int var6 = 6;
-            int var7 = 7;
+            //int var6 = 6;
+            //int var7 = 7;
         }
 
         System.out.println(var4 + var1); 

@@ -5,7 +5,7 @@ public class JavaBasicoTiposOutra {
     public JavaBasicoTiposOutra() {
     }
 
-    private int calculaIdade() {
+    public int calculaIdade() {
         // ...
         return 0;
     }

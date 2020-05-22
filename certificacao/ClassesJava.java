@@ -1,0 +1,3 @@
+class ClassesJava1 {
+    
+}
