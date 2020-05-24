@@ -1,6 +1,6 @@
 package app.operadores;
 
-public class Binarios {
+public class Binarios implements IRelacionais {
     public static void main(String[] args) {
         int op1 = 3 + 4; // = 7
         int op2 = 4 - 8; // = -4
