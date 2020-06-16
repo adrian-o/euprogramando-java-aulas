@@ -5,3 +5,5 @@
 
 ## IDE Files
 .idea
+*.stackdump
+certificacao/java-objects/.vscode/launch.json
