@@ -8,6 +8,6 @@ public class Trim {
         System.out.println("1- Canal: [" + canal + "]");
         System.out.println("2- Canal: [" + canal.trim() + "]");
 
-        System.out.println("3- Canal: [" + canal.trim() + "]");
+        System.out.println("3- Canal: [" + canal + "]");
     }
 }
