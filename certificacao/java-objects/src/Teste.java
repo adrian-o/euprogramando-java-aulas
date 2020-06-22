@@ -69,5 +69,13 @@ public class Teste {
         System.out.println("OBRIGADO POR JOGAR...");
 
         sc.close();
+
+        String anotherString = null;
+
+        if ("true".equalsIgnoreCase(anotherString)) {
+            System.out.println("TEste");
+        } else {
+            System.out.println("Não de bom");            
+        }
     }
 }
