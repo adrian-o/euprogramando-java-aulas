@@ -60,6 +60,7 @@ public class JogoDaVelha {
                 System.out.println("Jogada inválida, refaça sua jogada...");
             }
         }
+        sca.close();
         validaVencedor(jogada);
     }
 
