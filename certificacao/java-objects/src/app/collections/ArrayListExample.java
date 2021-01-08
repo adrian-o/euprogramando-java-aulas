@@ -5,28 +5,28 @@ import java.util.List;
 
 public class ArrayListExample {
     public static void main(String[] args) {
-        // ArrayList<Object> lista = new ArrayList<>(); // ArrayList(5); 
-        // lista.add("O canal ");
-        // lista.add("Eu Programando ");
-        // lista.add("completa hoje ");
-        // lista.add(1);
-        // lista.add(" ano de existência. ");
-        // lista.add("É ");
-        // lista.add(true);
-        // lista.add(new ArrayListExample());
+        ArrayList<Object> lista = new ArrayList<>(); // ArrayList(5); 
+        lista.add("O canal ");
+        lista.add("Eu Programando ");
+        lista.add("completa hoje ");
+        lista.add(1);
+        lista.add(" ano de existência. ");
+        lista.add("É ");
+        lista.add(true);
+        lista.add(new ArrayListExample());
 
-        // for (Object s : lista) {
-        //     if (s instanceof String) {
-        //         System.out.println(((String)s).toUpperCase());
-        //     }
-        // }
+        for (Object s : lista) {
+            if (s instanceof String) {
+                System.out.println(((String)s).toUpperCase());
+            }
+        }
 
-        // ArrayList lista2 = new ArrayList(lista);
-        // lista2.remove(2);
+        ArrayList lista2 = new ArrayList(lista);
+        lista2.remove(2);
         
         System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-        // System.out.println("Lista: " + lista);
-        // System.out.println("Lista2: " + lista2);
+        System.out.println("Lista: " + lista);
+        System.out.println("Lista2: " + lista2);
 
         List<String> lista3 = new ArrayList<>();
         lista3.add("A"); //0 
@@ -46,9 +46,9 @@ public class ArrayListExample {
         else 
             System.out.println("Nada foi removido do ArrayList");
 
-        String removedObj = lista3.remove(5);
+        // String removedObj = lista3.remove(5);
 
-        System.out.println(lista3 + " Removido o objeto " + removedObj);
+        // System.out.println(lista3 + " Removido o objeto " + removedObj);
 
         String myStr = lista3.get(1);
 

@@ -1,7 +1,9 @@
 ## Java files
 
+.project
 *.class
 *.jar
+*.project
 
 ## IDE Files
 .idea
