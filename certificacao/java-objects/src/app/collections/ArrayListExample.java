@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ArrayListExample {
     public static void main(String[] args) {
+        
         ArrayList<Object> lista = new ArrayList<>(); // ArrayList(5); 
         lista.add("O canal ");
         lista.add("Eu Programando ");
@@ -54,8 +55,23 @@ public class ArrayListExample {
 
         System.out.println("Posição 1 -> " + myStr);
 
-        lista3.set(1, removedObj);
+        //lista3.set(1, removedObj);
 
         System.out.println(lista3);
+
+
+        List<String> lista4 = new ArrayList<>();
+        lista4.add(null);
+        lista4.add("");
+        lista4.add("");
+
+        System.out.println("Tamanho da lista4 -> " + lista4.size());
+        
+        if (lista4.size() > 0) {
+            System.out.println("Lista 4 está vazia? R = " + lista4.isEmpty());
+        }
+
+        //lista4.size() == 0;
+        //lista4.isEmpty();
     }
 }
