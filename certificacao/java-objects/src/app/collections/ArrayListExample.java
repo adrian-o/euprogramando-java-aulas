@@ -6,6 +6,34 @@ import java.util.List;
 public class ArrayListExample {
     public static void main(String[] args) {
         
+        List<String> nomes = new ArrayList<>();
+        nomes.add("Adriano");
+
+        List<String> nomes2 = new ArrayList<>();
+        nomes2.add("Adriano");
+        
+        System.out.println("Igualdade com == -> " + (nomes == nomes2));
+        System.out.println("Usando método equals -> " + nomes.equals(nomes2));
+
+        nomes2 = nomes;
+
+        System.out.println("Igualdade com == -> " + (nomes == nomes2));
+        System.out.println("Usando método equals -> " + nomes.equals(nomes2));
+
+        // nomes.add("Carlos");
+        // nomes.add("Jhonatan");
+        // nomes.add("João");
+
+        // System.out.println("Lista nomes contém a String Adriano -> " + nomes.contains("Adriano"));
+
+        // //nomes.clear();
+
+        // System.out.println("Lista nomes contém a String Adriano -> " + nomes.contains("Adriano"));
+        // System.out.println("Lista é vazia -> " + nomes.isEmpty());
+        // System.out.println("Tamanho da lista -> " + nomes.size());
+
+
+        /*
         ArrayList<Object> lista = new ArrayList<>(); // ArrayList(5); 
         lista.add("O canal ");
         lista.add("Eu Programando ");
@@ -70,7 +98,7 @@ public class ArrayListExample {
         if (lista4.size() > 0) {
             System.out.println("Lista 4 está vazia? R = " + lista4.isEmpty());
         }
-
+        */
         //lista4.size() == 0;
         //lista4.isEmpty();
     }
