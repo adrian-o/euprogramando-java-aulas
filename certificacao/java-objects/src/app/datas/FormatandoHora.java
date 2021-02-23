@@ -6,11 +6,9 @@ import java.time.format.FormatStyle;
 
 public class FormatandoHora {
     public static void main(String[] args) {
-        System.out.println("\n#### Formatando Horas #####");
-        DateTimeFormatter mediumTf = DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM);
-        System.out.println("MEDIUM -> " + mediumTf.format(LocalTime.now()));
-
-        DateTimeFormatter shortTf = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
-        System.out.println("SHORT -> " + shortTf.format(LocalTime.now()));
+        LocalTime hora = LocalTime.of(10,15,43);
+        DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM);
+        System.out.println(hora);
+        System.out.println(dtf.format(hora));
     }
 }

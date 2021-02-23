@@ -1,16 +1,16 @@
 package app.datas;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
 public class FormatandoDataHora {
     public static void main(String[] args) {
-        System.out.println("\n#### Formatando Data/Hora #####");
-        DateTimeFormatter mediumDtf = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
-        System.out.println("SHORT -> " + mediumDtf.format(LocalDateTime.now()));
+        LocalDateTime data = LocalDateTime.of(2019, 12, 21, 8, 46, 22);
+        DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
 
-        DateTimeFormatter shortDtf = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
-        System.out.println("SHORT -> " + shortDtf.format(LocalDateTime.now()));
+        System.out.println("Formatada: " + dtf.format(data));
+        System.out.println("Data: " + data);
     }
 }

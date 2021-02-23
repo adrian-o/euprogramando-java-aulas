@@ -6,17 +6,10 @@ import java.time.format.FormatStyle;
 
 public class FormatandoData {
     public static void main(String[] args) {
-        System.out.println("\n#### Formatando Datas #####");
-        DateTimeFormatter fullDf = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
-        System.out.println("FULL -> " + fullDf.format(LocalDate.now()));
+        LocalDate data = LocalDate.of(2019,12,21);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM;yyyy;dd"); // DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
 
-        DateTimeFormatter longDf = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
-        System.out.println("LONG -> " + longDf.format(LocalDate.now()));
-
-        DateTimeFormatter mediumDf = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);
-        System.out.println("MEDIUM -> " + mediumDf.format(LocalDate.now()));
-
-        DateTimeFormatter shortDf = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
-        System.out.println("SHORT -> " + shortDf.format(LocalDate.now()));
+        System.out.println("Formatada: " + dtf.format(data));
+        System.out.println("Data: " + data);
     }
 }
