@@ -39,4 +39,14 @@ public class NomeListaParametros {
 
     // void parametros(int...i, int z) {} NÃO COMPILA porque o varargs deve sempre ser o ultimo parâmetro.
 
+    public void nomeDoMetodo() {}
+
+    public int nomeDoMetodo(int i) {
+        return 0;
+    }
+
+    // public int nomeDoMetodo() {} Não compila porque a lista de parâmetros não mudou embora tenhamos mudado o retorno pra INT
+
+    // private void nomeDoMetodo() {} Não compila porque a lista de parâmetros não mudou embora tenhamos mudado o método pra PRIVATE
+
 }
