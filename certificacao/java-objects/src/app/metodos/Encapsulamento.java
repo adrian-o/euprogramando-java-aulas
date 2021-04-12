@@ -6,28 +6,67 @@ public class Encapsulamento {
 
     private boolean altera;
 
-    public void setIdade(Integer idade) {
-        this.idade = idade;
+    private Float total;
 
-        if (idade < 0) {
-            this.idade = 0;
-        }
+    private String str1;
+
+    private String str2;
+
+    private String str3;
+
+    public Float getTotal() {
+        return total;
+    }
+
+    public void setTotal(Float total) {
+        this.total = total;
     }
 
     public Integer getIdade() {
         return this.idade;
     }
 
-    public void setAltera(boolean altera) {
-        this.altera = altera;
+    public void setIdade(Integer idade) {
+        if (idade >= 0)
+            this.idade = idade;
     }
 
     public boolean isAltera() {
         return this.altera;
     }
 
-    public void dobraIdade() {
-        if (isAltera())
-            this.idade = this.idade * 2;
+    public void setAltera(boolean altera) {
+        this.altera = altera;
+    }
+
+    public int dobraIdade() {
+        if (this.altera)
+            return this.idade * 2;
+
+        return getIdade();
+    }
+
+    public String getStr1() {
+        return str1;
+    }
+
+    public void setStr1(String str1) {
+        this.str1 = str1;
+    }
+
+    public String getStr2() {
+        return str2;
+    }
+
+    public void setStr2(String str2) {
+        this.str2 = str2;
+    }
+
+    public String getStr3() {
+        return str3;
+    }
+
+    public void setStr3(String str3) {
+        this.str3 = str3;
     }
 }
