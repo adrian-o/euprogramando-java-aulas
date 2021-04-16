@@ -6,8 +6,6 @@ public class EncapsulamentoExec {
         enc.setAltera(false);
         enc.setIdade(20);
 
-        enc.altera
-
         System.out.println("Idade em dobro? " + enc.isAltera());
         System.out.println("Resultado -> " + enc.dobraIdade());
     }
