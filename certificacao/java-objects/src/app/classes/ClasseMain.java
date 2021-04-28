@@ -10,5 +10,14 @@ public class ClasseMain {
         System.out.println(novoSb.toString());
 
         System.out.println(mci.getNome().toString());
+
+
+
+
+
+
+        ClasseSeguinte cs = new ClasseSeguinte();
+        cs.setTamanho(125);
+        cs.setNome("Classe Filha");
     }
 }
