@@ -9,6 +9,8 @@ public class Zoo {
         Animal c2 = new Cachorro();
         c2.setCodigo("C002");
         c2.setNome("Totó");
+        System.out.println("Cachorro: " + c2.getNome());
+        c2.fazSom();
 
         Animal l = new Leopardo();
         l.setCodigo("L001");
@@ -17,16 +19,20 @@ public class Zoo {
         Animal p = new Passarinho();
         p.setCodigo("P001");
         p.setNome("Frufru");
+        System.out.println("Passarinho: " + p.getNome());
+        p.fazSom();
 
         Animal a = new Leopardo();
         a.setCodigo("L002");
         a.setNome("Carlito");
-
-        System.out.println("Cachorro: " + c.getNome());
-        System.out.println("Cachorro: " + c2.getNome());
-        System.out.println("Leopardo: " + l.getNome());
-        System.out.println("Passarinho: " + p.getNome());
-
         System.out.println("Leopardo: " + a.getNome());
+        a.fazSom();
+
+//        System.out.println("Cachorro: " + c.getNome());
+//        System.out.println("Cachorro: " + c2.getNome());
+//        System.out.println("Leopardo: " + l.getNome());
+//        System.out.println("Passarinho: " + p.getNome());
+//
+//        System.out.println("Leopardo: " + a.getNome());
     }
 }
