@@ -3,6 +3,8 @@ package app.classes.zoo;
 public abstract class Animal {
     private String nome;
     private String codigo;
+    protected boolean predador;
+    Integer numeroPatas;
 
     public Animal(String codigo, String nome) {
         this.codigo = codigo;
@@ -31,5 +33,21 @@ public abstract class Animal {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }
+
+    public boolean isPredador() {
+        return predador;
+    }
+
+    public void setPredador(boolean predador) {
+        this.predador = predador;
+    }
+
+    public Integer getNumeroPatas() {
+        return numeroPatas;
+    }
+
+    public void setNumeroPatas(Integer numeroPatas) {
+        this.numeroPatas = numeroPatas;
     }
 }

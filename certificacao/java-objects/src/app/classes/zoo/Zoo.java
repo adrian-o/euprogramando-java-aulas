@@ -22,11 +22,15 @@ public class Zoo {
         System.out.println("Passarinho: " + p.getNome());
         p.fazSom();
 
-        Animal a = new Leopardo();
+        Leopardo a = new Leopardo();
         a.setCodigo("L002");
         a.setNome("Carlito");
+        a.setPredador(true);
+        a.setNumeroPatas(4);
         System.out.println("Leopardo: " + a.getNome());
         a.fazSom();
+        a.cacar();
+
 
 //        System.out.println("Cachorro: " + c.getNome());
 //        System.out.println("Cachorro: " + c2.getNome());

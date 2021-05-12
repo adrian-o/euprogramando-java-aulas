@@ -11,4 +11,15 @@ public class Leopardo extends Animal {
         super.fazOutroSom();
         System.out.println("Miau");
     }
+
+    public void cacar() {
+        if (!predador) {
+            System.out.println("Animal não é um predador, não pode caçar");
+            return;
+        }
+
+        if (getNumeroPatas() > 2) {
+            System.out.println("Animal caça rápido");
+        }
+    }
 }
