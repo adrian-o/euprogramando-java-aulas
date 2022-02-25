@@ -11,7 +11,9 @@ public class Zoo {
         Animal h = new Hiena("H002","Risadinha",true,4);
         h.cacar();
 
-        Animal a = new Leopardo("L002","Carlito",true,4);
-        a.cacar();
+        Animal l = new Leopardo("L002","Carlito",true,4);
+        l.cacar();
+        l.cacarPrivado();
+        l.locomover();
     }
 }

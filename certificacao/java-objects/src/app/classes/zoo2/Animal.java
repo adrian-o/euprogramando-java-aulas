@@ -4,13 +4,21 @@ public abstract class Animal {
     private String nome;
     private String codigo;
     protected boolean predador;
-    Integer numeroPatas;
+    protected Integer numeroPatas;
 
     public Animal(String codigo, String nome, boolean predador, Integer numeroPatas) {
         this.codigo = codigo;
         this.nome = nome;
         this.predador = predador;
         this.numeroPatas = numeroPatas;
+    }
+
+    public void locomover() {
+        System.out.println("O Animal se move...");
+    }
+
+    protected final void cacarPrivado() {
+        System.out.println("O Animal caça escondido...");
     }
 
     public void cacar() {
